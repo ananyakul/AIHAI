@@ -15,7 +15,7 @@
     <nav>
         <a href="#introduction">Introduction</a>
         <a href="#examples">Musical Examples</a>
-        <a href="#methods">Technical Methods</a>
+        <a href="#technical">Technical Methods/Results</a>
         <a href="#class-survey">Class Study</a>
         <a href="#large-study">Larger Study</a>
     </nav>
@@ -71,21 +71,22 @@
             </div>
         </section>
 
-        <section id="methods">
-            <h2>Methods</h2>
+        <section id="technical">
+            <h2>Technical Methods and Results</h2>
             <div class="figure-container">
                 <div class="figure-item">
                     <h3>Figure 1: t-SNE Visualization of CLAP Embeddings</h3>
                     <img src="images/embeddings_figures/t-SNE_AIME_MusicCaps.png" alt="t-SNE Visualization">
                 </div>
             </div>
+            <p>The t-SNE visualization reveals distinct clustering between AIME (blue) and MusicCaps (orange) embeddings, indicating that the audio representations from AI-generated and human-composed music occupy separable regions in the embedding space. While there is some overlap, particularly in regions with denser points, the differentiation suggests that the embeddings capture meaningful features that distinguish AI-generated music from human-composed music. This separability aligns with the classification results and highlights the effectiveness of the CLAP embeddings in capturing distinct compositional traits between the two datasets.</p>
             <div class="figure-container">
                 <div class="figure-item">
                     <h3>Figure 2: t-SNE Visualization of CLAP Embeddings for AIME by Generative Model</h3>
                     <img src="images/embeddings_figures/generative_model.png" alt="t-SNE by Model Visualization">
                 </div>
             </div>
-            <p>From this, we can see that </p>
+            <p>The embedding visualization shows distinct clusters for models like Riffusion and Mustango, while significant overlap exists among versions of the same base model (e.g., MusicGen Small, Medium, Large). This overlap aligns with misclassifications in the confusion matrix and suggests similarities in embedding patterns due to shared architectures. The clustering raises questions about variations in output quality across models and their impact on classification tasks, including AI vs. human differentiation.</p>
         </section>
 
         <section id="class-survey">
