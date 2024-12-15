@@ -15,10 +15,9 @@
     <nav>
         <a href="#introduction">Introduction</a>
         <a href="#examples">Musical Examples</a>
-        <a href="#methods">Methods</a>
+        <a href="#methods">Technical Methods</a>
         <a href="#class-survey">Class Study</a>
         <a href="#large-study">Larger Study</a>
-        <a href="#conclusion">Conclusion</a>
     </nav>
 
     <main>
@@ -76,21 +75,16 @@
             <h2>Methods</h2>
             <div class="figure-container">
                 <div class="figure-item">
-                    <h3>Figure 1: t-SNE Visualization of Embeddings</h3>
+                    <h3>Figure 1: t-SNE Visualization of CLAP Embeddings</h3>
                     <img src="images/embeddings_figures/t-SNE_AIME_MusicCaps.png" alt="t-SNE Visualization">
                 </div>
             </div>
-            <p>Our preliminary analysis of the generated embeddings reveals the following insights:</p>
-            <ul>
-                <li><b>Clustering Patterns:</b> Both PCA and t-SNE visualizations show distinct regions, suggesting potential grouping of embeddings based on musical characteristics or metadata (e.g., genre or human vs. AI-generated labels).
-</li>
-                <li><b>Separation in t-SNE:</b> The t-SNE plot highlights better local relationships, indicating that embeddings capture nuanced features effectively, making it suitable for identifying similar audio samples.
-</li>
-                <li><b>Outlier Detection:</b> Sparse points in the plots may correspond to outliers or unique embeddings, potentially representing uncommon musical patterns or anomalies in the dataset.
-</li>
-                <li><b>Next Steps:</b> Incorporating metadata (e.g., genres, repetition scores) as color-coded labels could reveal additional patterns and validate how well embeddings align with these attributes.
-</li>
-            </ul>
+            <div class="figure-container">
+                <div class="figure-item">
+                    <h3>Figure 2: t-SNE Visualization of CLAP Embeddings for AIME by Generative Model</h3>
+                    <img src="images/embeddings_figures/t-SNE_AIME_MusicCaps.png" alt="t-SNE Visualization">
+                </div>
+            </div>
         </section>
 
         <section id="class-survey">
@@ -129,12 +123,6 @@
                 <li>To account for multiple comparisons, p-values were adjusted using the Bonferroni correction. After adjustment, there was no significant difference among the classification responses.</li>
             </ul>
         </section>
-
-        <section id="conclusion">
-            <h2>Conclusion</h2>
-            <p>Our findings highlight the potential for AI-generated music to evolve with more nuanced training. Future work will refine these models and incorporate deeper listener feedback.</p>
-        </section>
-    </main>
 
     <footer>
         <p>&copy; Fall 2024 Ananya Kulshrestha and Kimaya Lecamwasam | Contact: <a href="mailto:ananya_k@mit.edu">ananya_k@mit.edu</a> and <a href="mailto:klecamwa@mit.edu">klecamwa@mit.edu</a></p>
